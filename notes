@@ -1,0 +1,10 @@
+هنعمل اتنين ليبول كدا
+<a href="{{url('Lang/en')}}">EN</a>
+<a href="{{url('Lang/ar')}}">ع</a>
+وبعدين هنروح نعمل الراوت بتاع الالجود
+Route::get('Lang/{lang}',function ($lang){
+    session()->put('lang',$lang);
+    return back();
+
+});
+
